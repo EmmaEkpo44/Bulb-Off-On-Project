@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+</head>
+<script>
+    function turnOn() {
+        document.getElementById("my-image").src = "./images/Bulb on.png"
+        offBtn.style.display="block"
+        onBtn.style.display="none"
+    }
+
+    function turnOff() {
+        document.getElementById("my-image").src = "./images/Bulb off.png"
+        offBtn.style.display="none"
+        onBtn.style.display="block"
+    }
+</script>
+
+<body>
+
+    <center>
+
+        <button onclick="turnOn()" style="padding: 20px;border-radius: 20px;border: 0px;"  id="onBtn">Turn ON</button>
+        <button onclick="turnOff()" style="padding: 20px;border-radius: 20px;border: 0px;display: none;"  id="offBtn">Turn OFF</button>
+        <img src="./images/Bulb off.png" alt="" style="height: 300px;" id="my-image">
+
+       
+    </center>
+
+</body>
+
+</html>
